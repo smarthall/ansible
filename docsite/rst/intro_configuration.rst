@@ -115,6 +115,18 @@ sudoing.  The default behavior is also no::
 
 Users on platforms where sudo passwords are enabled should consider changing this setting.
 
+.. _ask_vault_pass:
+
+ask_vault_pass
+=============
+
+Again, this controls whether an Ansible playbook should prompt for the password to any encrypted vault files.
+The default behaviour is no::
+
+    #ask_vault_pass=True
+
+If you are using vault encrypted file you may wish to change this option.
+
 .. _callback_plugins:
 
 callback_plugins
